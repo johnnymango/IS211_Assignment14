@@ -22,6 +22,9 @@ print fiblist[-1]
 
 
 #Euclid’s GCD Algorithm
+a=100
+b=25
+
 def gcd(a, b):
      if a == 0:
          return b
@@ -31,7 +34,8 @@ def gcd(a, b):
          return gcd(b, a % b)
 
 if __name__ == "__main__":
-    print gcd(24, 10)
+    print ("The GCD for {} and {} is:".format(a, b))
+    print gcd(a,b)
 
 
 #Comparing two strings.  This is not recursive.
